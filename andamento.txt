@@ -1,0 +1,11 @@
+repositorios - ok
+migracoes - ok
+dtos - ok
+
+a fazer:
+- criar servico buscarBoleto
+- criar controllers
+- usar auto mapper
+- verificar se nao seria bom adicionar algumas validacoes nas entidades
+- usar bearer token
+- testar

@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "I1lOCU5W0FsiFsdtQb9KNsAoMoRVS6v8fpCkVuFye2g=",
+  "Source": "BoletoApi",
+  "BasePath": "_content/BoletoApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
