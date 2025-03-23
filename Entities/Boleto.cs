@@ -2,23 +2,22 @@ namespace BoletoApi.Entities
 {
     public class Boleto
     {
-        public Guid Id { get; private set; }
-        public string NomePagador { get; private set; }
-        public string CpfCnpjPagador { get; private set; }
-        public string NomeBeneficiario { get; private set; }
-        public string CpfCnpjBeneficiario { get; private set; }
-        public decimal Valor { get; private set; }
-        public DateTime DataVencimento { get; private set; }
-        public string? Observacao { get; private set; }
+        public Guid Id { get; set; }
+        public string NomePagador { get; set; }
+        public string CpfCnpjPagador { get; set; }
+        public string NomeBeneficiario { get; set; }
+        public string CpfCnpjBeneficiario { get; set; }
+        public decimal Valor { get; set; }
+        public DateTime DataVencimento { get; set; }
+        public string? Observacao { get; set; }
 
         // referencia
-        public Guid BancoId { get; private set; }
-        public Banco Banco { get; private set; }
+        public Guid BancoId { get; set; }
+        public Banco Banco { get; set; }
 
         // construtor
         public Boleto(string nomePagador, string cpfCnpjPagador, string nomeBeneficiario, string cpfCnpjBeneficiario, decimal valor, DateTime dataVencimento, Guid bancoId)
         {
-            // ver se adiciono alguma validacao aq tb
             Id = Guid.NewGuid();
             NomePagador = nomePagador;
             CpfCnpjPagador = cpfCnpjPagador;

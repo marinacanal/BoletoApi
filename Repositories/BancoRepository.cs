@@ -27,10 +27,11 @@ namespace BoletoApi.Repositories
         }
 
         // create
-        public async Task CreateAsync(Banco banco)
+        public async Task<Banco> CreateAsync(Banco banco)
         {
             await _dbSet.AddAsync(banco);
             await _context.SaveChangesAsync();
+            return banco;
         }
     }
 }

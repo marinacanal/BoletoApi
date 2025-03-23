@@ -21,9 +21,10 @@ namespace BoletoApi.Repositories
         }
 
         // create
-        public async Task CreateAsync(Boleto boleto) {
+        public async Task<Boleto> CreateAsync(Boleto boleto) {
             await _dbSet.AddAsync(boleto);
-            await _context.SaveChangesAsync();   
+            await _context.SaveChangesAsync(); 
+            return boleto;  
         }   
     }
 }

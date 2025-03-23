@@ -1,12 +1,16 @@
-using BoletoApi.Context;
+using BoletoApi.Data;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-builder.Services.AddDbContext<Contexto>(options => 
+// AppDbContext
+builder.Services.AddDbContext<AppDbContext>(options => 
     options.UseNpgsql(builder.Configuration.GetConnectionString("ConexaoPadrao")));
 
+// AutoMapper
+builder.Services.AddAutoMapper(typeof(Program));
+
+// Outros servicos
 builder.Services.AddControllers();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
