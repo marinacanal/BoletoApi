@@ -11,8 +11,8 @@ Antes de rodar a api, edite o arquivo appsettings.Development.json para configur
 ```
 {
   "ConnectionStrings": {
-    "DefaultConnection": "Host=SEU_HOST;Database=SEU_BANCO;Username=SEU_USUARIO;Password=SUA_SENHA"
-  }
+    "ConexaoPadrao": "Server=SEU_HOST;Port=SUA_PORTA;Database=SEU_BANCO_DADOS;User Id=SEU_USER;Password=SUA_SENHA;"
+  },
 }
 ```
 
