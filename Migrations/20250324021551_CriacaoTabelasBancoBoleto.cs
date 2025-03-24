@@ -16,7 +16,7 @@ namespace BoletoApi.Migrations
                     Id = table.Column<Guid>(type: "uuid", nullable: false),
                     Nome = table.Column<string>(type: "text", nullable: true),
                     Codigo = table.Column<short>(type: "smallint", nullable: false),
-                    PercentualJuros = table.Column<double>(type: "double precision", nullable: false)
+                    PercentualJuros = table.Column<decimal>(type: "numeric", nullable: false)
                 },
                 constraints: table =>
                 {

@@ -41,3 +41,15 @@
 /home/kamorrer/Documentos/Projetos/BoletoApi/obj/Debug/net6.0/BoletoApi.csproj.Up2Date
 /home/kamorrer/Documentos/Projetos/BoletoApi/obj/Debug/net6.0/refint/BoletoApi.dll
 /home/kamorrer/Documentos/Projetos/BoletoApi/obj/Debug/net6.0/BoletoApi.sourcelink.json
+/home/kamorrer/Documentos/Projetos/BoletoApi/bin/Debug/net6.0/AutoMapper.dll
+/home/kamorrer/Documentos/Projetos/BoletoApi/bin/Debug/net6.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/home/kamorrer/Documentos/Projetos/BoletoApi/bin/Debug/net6.0/DotNetEnv.dll
+/home/kamorrer/Documentos/Projetos/BoletoApi/bin/Debug/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/home/kamorrer/Documentos/Projetos/BoletoApi/bin/Debug/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/home/kamorrer/Documentos/Projetos/BoletoApi/bin/Debug/net6.0/Microsoft.IdentityModel.Logging.dll
+/home/kamorrer/Documentos/Projetos/BoletoApi/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.dll
+/home/kamorrer/Documentos/Projetos/BoletoApi/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/home/kamorrer/Documentos/Projetos/BoletoApi/bin/Debug/net6.0/Microsoft.IdentityModel.Tokens.dll
+/home/kamorrer/Documentos/Projetos/BoletoApi/bin/Debug/net6.0/Sprache.dll
+/home/kamorrer/Documentos/Projetos/BoletoApi/bin/Debug/net6.0/System.IdentityModel.Tokens.Jwt.dll
+/home/kamorrer/Documentos/Projetos/BoletoApi/bin/Debug/net6.0/Microsoft.IdentityModel.Abstractions.dll

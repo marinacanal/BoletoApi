@@ -1,11 +1,13 @@
 using BoletoApi.DTOs;
 using BoletoApi.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BoletoApi.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize]
     public class BoletoController : ControllerBase
     {
         private readonly BoletoService _boletoService;

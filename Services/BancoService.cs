@@ -19,13 +19,13 @@ namespace BoletoApi.Services
         public async Task<BancoResponseDTO> CriarBanco(BancoRequestDTO bancoRequest)
         {
             var banco = _mapper.Map<Banco>(bancoRequest);
-            banco = await _bancoRepository.CreateAsync(banco);
+            banco = await _bancoRepository.CriarBanco(banco);
             return _mapper.Map<BancoResponseDTO>(banco);
         }
 
         public async Task<BancoResponseDTO> BuscarBancoPorId(Guid id)
         {
-            var banco = await _bancoRepository.GetByIdAsync(id);
+            var banco = await _bancoRepository.BuscarBancoPorId(id);
 
             if(banco == null)
                 throw new KeyNotFoundException("Banco não encontrado!");
@@ -35,7 +35,7 @@ namespace BoletoApi.Services
 
         public async Task<List<BancoResponseDTO>> BuscarTodosBancos()
         {
-            var bancos = await _bancoRepository.GetAllAsync();
+            var bancos = await _bancoRepository.BuscarTodosBancos();
 
             if(!bancos.Any())
                 throw new NullReferenceException("Nenhum banco encontrado!");

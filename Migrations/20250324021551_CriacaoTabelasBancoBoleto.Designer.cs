@@ -3,6 +3,7 @@ using System;
 using BoletoApi.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,10 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace BoletoApi.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class ContextoModelSnapshot : ModelSnapshot
+    [Migration("20250324021551_CriacaoTabelasBancoBoleto")]
+    partial class CriacaoTabelasBancoBoleto
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -34,8 +36,8 @@ namespace BoletoApi.Migrations
                     b.Property<string>("Nome")
                         .HasColumnType("text");
 
-                    b.Property<double>("PercentualJuros")
-                        .HasColumnType("double precision");
+                    b.Property<decimal>("PercentualJuros")
+                        .HasColumnType("numeric");
 
                     b.HasKey("Id");
 

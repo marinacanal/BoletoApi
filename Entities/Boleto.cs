@@ -14,18 +14,5 @@ namespace BoletoApi.Entities
         // referencia
         public Guid BancoId { get; set; }
         public Banco Banco { get; set; }
-
-        // construtor
-        public Boleto(string nomePagador, string cpfCnpjPagador, string nomeBeneficiario, string cpfCnpjBeneficiario, decimal valor, DateTime dataVencimento, Guid bancoId)
-        {
-            Id = Guid.NewGuid();
-            NomePagador = nomePagador;
-            CpfCnpjPagador = cpfCnpjPagador;
-            NomeBeneficiario = nomeBeneficiario;
-            CpfCnpjBeneficiario = cpfCnpjBeneficiario;
-            Valor = valor;
-            DataVencimento = dataVencimento;
-            BancoId = bancoId;
-        }
     }
 }
